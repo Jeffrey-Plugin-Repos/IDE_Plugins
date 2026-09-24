@@ -7,6 +7,16 @@ Remote plugin repository for JEditor and PyBreeze: syntax-highlighting and run-c
 - Every language plugin module defines `PLUGIN_RUN_CONFIG` and `register()`; translation plugins define `register()`. The loader is `je_editor/plugins/plugin_loader.py` in JEditor.
 - Only `.py` files are downloaded, so documentation files (`*.md`, `docs/`) never reach users.
 
+## README (keep current)
+
+**`README.md` must stay in sync with the code.** It is the only README this repo ships (docs never
+reach users — the plugin browser downloads `.py` files only). Any user-facing change — new or
+changed plugins, the plugin contract, supported languages, install/setup — updates `README.md` in
+the same commit. If translated READMEs are ever added, keep them in lockstep with `README.md`:
+every such change lands in `README.md` and every language variant in the same commit, structure and
+content aligned, never one language ahead of the others. No test guards this, so it is a manual
+check.
+
 ## Git commits
 
 - Commit messages, PR titles and bodies must not mention any AI tool or model, and never carry `Co-Authored-By` or "Generated with" lines.
