@@ -9,13 +9,13 @@ Remote plugin repository for JEditor and PyBreeze: syntax-highlighting and run-c
 
 ## README (keep current)
 
-**`README.md` must stay in sync with the code.** It is the only README this repo ships (docs never
-reach users — the plugin browser downloads `.py` files only). Any user-facing change — new or
-changed plugins, the plugin contract, supported languages, install/setup — updates `README.md` in
-the same commit. If translated READMEs are ever added, keep them in lockstep with `README.md`:
-every such change lands in `README.md` and every language variant in the same commit, structure and
-content aligned, never one language ahead of the others. No test guards this, so it is a manual
-check.
+**`README.md` must stay in sync with the code.** README is the only user-facing doc this repo ships
+(the plugin browser downloads `.py` files only). This repo now ships a nine-language README set:
+English `README.md` plus `README/README_<lang>.md` for `zh-TW`, `zh-CN`, `ja`, `ko`, `es`, `fr`,
+`de`, `pt-BR`, `ru`. Any user-facing change — new or changed plugins, the plugin contract, supported
+languages, install/setup — updates `README.md` **and every one of the nine language variants in the
+same commit**, structure and content aligned, never one language ahead of the others. No test guards
+this, so it is a manual check.
 
 ## Git commits
 
